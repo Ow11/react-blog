@@ -1,0 +1,29 @@
+header {
+    background-color: #F8F9FA;
+    height: 5.6rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 5.6rem;
+    list-style: none;
+}
+
+header nav > li {
+    flex-grow: 1;
+}
+
+header nav > li:last-child {
+    flex-grow: 8;
+    text-align: right;
+}
+
+header nav > li > a {
+    color: #6C757D;
+}
+
+header nav > li > a:hover,
+header nav > li > a:hover {
+    color: #212529;
+}

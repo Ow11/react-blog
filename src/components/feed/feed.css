@@ -1,0 +1,9 @@
+main {
+    max-width: 75vw;
+}
+
+@media (max-width: 767px) {
+    main {
+        max-width: unset;
+    }
+}
