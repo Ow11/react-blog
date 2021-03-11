@@ -1,6 +1,7 @@
 import React from "react"
 import "./feed.css";
 import {ArticleCard} from "../article-card";
+import {articles} from "./feed-mock";
 
 export const Feed = () => {
     return(
@@ -9,8 +10,8 @@ export const Feed = () => {
                 Recent articles
             </h1>
             <main>
-                <ArticleCard />
-                <ArticleCard />
+                <ArticleCard article={articles[0]} />
+                <ArticleCard article={articles[1]} />
             </main>
         </div>
     );
