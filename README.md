@@ -8,11 +8,11 @@ The exercise is [here](https://github.com/Applifting/fullstack-exercise).
 
 Run the following commands from the project directory
 
-`yarn install
+`yarn install`
 
-yarn build
+`yarn build`
 
-serve -s build`
+`serve -s build`
 
 ## Available Scripts
 
