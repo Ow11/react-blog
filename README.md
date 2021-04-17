@@ -8,6 +8,10 @@ The exercise is [here](https://github.com/Applifting/fullstack-exercise).
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Downloads all dependencies for the project
+
 ### `yarn start`
 
 Runs the app in the development mode.\
