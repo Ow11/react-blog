@@ -6,9 +6,12 @@ The exercise is [here](https://github.com/Applifting/fullstack-exercise).
 
 ## Run the project without docker
 
-run the following commands from the project directory
+Run the following commands from the project directory
+
 `yarn install
+
 yarn build
+
 serve -s build`
 
 ## Available Scripts
