@@ -4,13 +4,20 @@ The exercise is [here](https://github.com/Applifting/fullstack-exercise).
 
 **Docker is not prepared yet!**
 
+## Run the project without docker
+
+run the following commands from the project directory
+`yarn install
+yarn build
+serve -s build`
+
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `yarn install`
 
-Downloads all dependencies for the project
+Downloads all dependencies for the project.
 
 ### `yarn start`
 
