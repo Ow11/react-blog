@@ -1,0 +1,1 @@
+export { AdminNewArticle } from "./admin-new-article";

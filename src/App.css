@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+:root {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+
+  /*      color vars      */
+
+  --color--comment--dark: #212529;
+  --color--divider: #DFDFDF;
+  --color--gray: #6C757D;
+  --color--button--blue: #007BFF;
+  --color--button--red: #DC3545;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 1.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+span {
+  font-size: 1.4rem;
+  color: #6C757D;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+div.container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px 0 24px;
+}
+
+@media (max-width: 1200px) {
+  div.container {
+    max-width: 970px;
+    padding: 0 15px 0 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 992px) {
+  div.container {
+    max-width: 750px;
+  }
 }
 
-.App-link {
+@media (max-width: 767px) {
+  div.container {
+    max-width: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.link--blue {
+  color: var(--color--button--blue);
+}
+
+.link--blue:hover {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-blue {
+  height: 3.6rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: white;
+  background-color: var(--color--button--blue);
+  border: none;
+  border-radius: .4rem;
+  transition: opacity .3s;
+  padding: .6rem 1.2rem;
+}
+
+.btn-blue:hover {
+  opacity: 0.7;
+}
+
+.action-title {
+  margin: 4.8rem 0 3.6rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.action-title > button {
+  margin: 0;
+  width: unset;
+  padding: 0 1.3rem 0 1.2rem;
+}
+
+.action-title > h1 {
+  margin: 0 3.2rem 0 0;
 }

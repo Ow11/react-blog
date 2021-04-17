@@ -1,0 +1,43 @@
+form.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 36.8rem;
+    margin: 6.4rem auto;
+    padding: 0 3.2rem 0 3.2rem;
+    box-shadow: 0 1.6rem 4.8rem rgba(0, 0, 0, 0.175);
+    border-radius: .8rem;
+}
+
+form.login-form h1 {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    margin: 3.2rem 0 2.4rem 0;
+}
+
+form.login-form label {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+form.login-form input {
+    height: 3.6rem;
+    padding: 0 0 0 1.2rem;
+    margin: .8rem 0 1.6rem 0;
+    border: 1px solid var(--color--divider);
+    border-radius: .4rem;
+}
+
+form.login-form input::placeholder {
+    color: var(--color--gray);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+form.login-form input:invalid {
+    outline: 2px solid red;
+}
+
+form.login-form button.btn-blue {
+    margin: 1.6rem 0 2.5rem auto;
+}

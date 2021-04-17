@@ -1,0 +1,172 @@
+div.article-detail div.article-detail--wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.article-detail main {
+    max-width: 76rem;
+}
+
+@media (max-width: 1200px) {
+    div.article-detail aside {
+        display: none;
+    }
+}
+
+div.article-detail h1 {
+    margin-bottom: 3.5rem;
+}
+
+div.article-detail img {
+    margin: 2.5rem 0 2.5rem;
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+div.article-detail p {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 3rem;
+}
+
+/*      ASIDE     */
+
+div.article-detail aside {
+    max-width: 34rem;
+    margin: 8rem 0;
+}
+
+div.article-detail aside::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 59rem;
+    margin: 0 0 0 -2.5rem;
+    background-color: var(--color--divider);
+}
+
+div.article-detail aside h4 {
+    margin-bottom: 4rem;
+}
+
+div.article-detail aside h6 {
+    margin: 0 0 1rem;
+}
+
+div.article-detail aside p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+/*      COMMENTS      */
+
+div.article-detail div.comments {
+    max-width: 76rem;
+}
+
+div.article-detail div.comments hr {
+    height: 1px;
+    background-color: var(--color--divider);
+    border-width: 0px;
+    margin: 0;
+}
+
+div.article-detail div.comments h4 {
+    margin: 3rem 0 3rem;
+}
+
+div.article-detail div.comments > div.new-comment {
+    display: flex;
+}
+
+div.article-detail div.comments > div.new-comment img {
+    margin: 0 2.8rem 0 0;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 2.2rem;
+}
+
+div.article-detail div.comments > div.new-comment input {
+    height: 4.4rem;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0 0 0 1.6rem;
+    border: 1px solid var(--color--divider);
+    border-radius: .4rem;
+}
+
+div.article-detail div.comments > div.new-comment input::placeholder {
+    color: var(--color--gray);
+}
+
+div.article-detail div.comments > div.comment-card {
+    display: flex;
+    margin: 2.4rem 0 2.4rem 0;
+}
+
+div.article-detail div.comments > div.comment-card img {
+    margin: 0 2.8rem 0 0;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 2.2rem;
+}
+
+div.article-detail div.comments > div.comment-card span:first-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color--comment--dark);
+    margin-right: .8rem;
+}
+
+div.article-detail div.comments > div.comment-card p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color--comment--dark);
+    margin: .8rem 0 .8rem;
+}
+
+div.article-detail div.comments > div.comment-card div.rating {
+    display: flex;
+    flex-direction: row;
+}
+
+div.article-detail div.comments > div.comment-card div.rating > span.rating {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: normal;
+    color: black;
+}
+
+div.article-detail div.comments > div.comment-card div.rating > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    height: 2.4rem;
+    padding: 0;
+    margin-left: .8rem;
+}
+
+div.article-detail div.comments > div.comment-card div.rating > button.btn-rating-up {
+    margin-right: .8rem;
+}
+
+div.article-detail div.comments > div.comment-card div.rating > button::after {
+    content: "";
+    position: absolute;
+    margin: .4rem 0 0 .8rem;
+    width: 1px;
+    height: 1.6rem;
+    background-color: var(--color--divider);
+}
+
+div.article-detail div.comments > div.comment-card div.rating > button.btn-rating-up::before {
+    content: "";
+    position: absolute;
+    margin: .4rem -.8rem 0;
+    width: 1px;
+    height: 1.6rem;
+    background-color: var(--color--divider);
+}

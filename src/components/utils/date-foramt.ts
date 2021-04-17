@@ -1,7 +1,12 @@
 export const DateFormat = (dateString: string) => {
-    const date = Date.parse(dateString);
-    const oDate = new Intl.DateTimeFormat(dateString);
-    const fDate = (m_ca: any, m_it: any) => Object({...m_ca, [m_it.type]: m_it.value});
-    const mDate = oDate.formatToParts().reduce(fDate, {});
-    return mDate.month + '/' + mDate.day + '/' + mDate.year.slice(2, -1);
+    const date = new Date(dateString);
+    return date.getMonth().toLocaleString('en-US', {
+            minimumIntegerDigits: 2,
+            useGrouping: false,
+        })
+        + '/' + date.getDate().toLocaleString('en-US', {
+            minimumIntegerDigits: 2,
+            useGrouping: false,
+        })
+        + '/' + date.getFullYear().toString().slice(2, 4);
 }

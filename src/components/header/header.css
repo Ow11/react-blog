@@ -15,15 +15,50 @@ header nav > li {
 }
 
 header nav > li:last-child {
-    flex-grow: 8;
+    flex-grow: 21;
     text-align: right;
+}
+
+@media (max-width: 767px) {
+    header nav > li:last-child {
+        flex-grow: 6;
+    }
 }
 
 header nav > li > a {
     color: #6C757D;
 }
 
-header nav > li > a:hover,
+.active-nav-link,
 header nav > li > a:hover {
     color: #212529;
+}
+
+header nav > li > a:last-child > span > svg {
+    margin: 0 1.1rem .5rem;
+}
+
+header nav > li > a:last-child > svg {
+    margin: 0 0 -.6rem .2rem;
+}
+
+header nav > li > a:last-child > svg > path {
+    fill: #2B7EFB;
+    transition: fill .3s;
+}
+
+header nav > li > a:last-child:hover > svg > path {
+    fill: #61dafb;
+}
+
+header nav > li:last-child > a:nth-child(2) {
+    margin: 0 4rem 0 4rem;
+}
+
+header nav > li:last-child > a.color--black {
+    color: black;
+}
+
+header nav > li:last-child > a {
+    color: var(--color--button--blue);
 }

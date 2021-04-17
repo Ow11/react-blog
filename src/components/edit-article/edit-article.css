@@ -1,0 +1,78 @@
+div.edit-article {
+    display: flex;
+    flex-direction: column;
+    max-width: 76rem;
+}
+
+div.edit-article label:first-child {
+    margin-top: .4rem;
+}
+
+div.edit-article label {
+    margin-top: 3.2rem;
+    margin-bottom: .8rem;
+}
+
+div.edit-article label:nth-child(6) {
+    margin-top: 0;
+}
+
+div.edit-article input,
+div.edit-article textarea {
+    font-size: 2rem;
+    line-height: 3rem;
+    border: 1px solid var(--color--divider);
+    border-radius: .4rem;
+    padding: .8rem 0 .8rem 1.6rem;
+}
+
+div.edit-article textarea {
+    font-size: 2.3rem;
+    height: 98.6rem;
+    margin-bottom: 5rem;
+    line-height: 3rem;
+}
+
+div.edit-article label#image {
+    background-color: var(--color--gray);
+    width: 12.3rem;
+    margin: 0 0 4.2rem;
+    height: unset;
+    cursor: pointer;
+}
+
+div.edit-article img {
+    height: 7.4rem;
+    width: 11.2rem;
+    object-fit: cover;
+}
+
+div.edit-article div.image-options {
+    margin: .8rem 0 1.6rem;
+}
+
+div.edit-article div.image-options button,
+div.edit-article div.image-options label {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--color--button--blue);
+    cursor: pointer;
+}
+
+div.edit-article div.image-options button {
+    color: var(--color--button--red);
+    margin-left: 1.7rem;
+}
+
+div.edit-article div.image-options button::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1.6rem;
+    background-color: var(--color--divider);
+    margin-left: -.9rem;
+    margin-top: .3rem;
+}

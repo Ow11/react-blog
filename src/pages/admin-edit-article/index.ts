@@ -1,0 +1,1 @@
+export { AdminEditArticle } from "./admin-edit-article";
