@@ -1,5 +1,5 @@
 Arguments: 
-  /home/ow11/.nvm/versions/node/v14.9.0/bin/node /home/ow11/.nvm/versions/node/v14.9.0/bin/yarn add react-realtime-markup-editor
+  /home/ow11/.nvm/versions/node/v14.9.0/bin/node /home/ow11/.nvm/versions/node/v14.9.0/bin/yarn add react-helmet
 
 PATH: 
   /home/ow11/.nvm/versions/node/v14.9.0/bin:/home/ow11/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ow11/.dotnet/tools
@@ -33,6 +33,7 @@ npm manifest:
       "babel-plugin-relay": "^11.0.0",
       "react": "^17.0.1",
       "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0",
       "react-markdown": "^5.0.3",
       "react-router-dom": "^5.2.0",
       "react-scripts": "4.0.3",

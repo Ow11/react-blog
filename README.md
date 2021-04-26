@@ -2,7 +2,13 @@
 
 The exercise is [here](https://github.com/Applifting/fullstack-exercise).
 
-**Docker is not prepared yet!**
+## Docker
+
+To run docker image:
+
+1. Create it with `docker build -t NAME:TAG /path/to/the/Dockerfile`
+
+2. Run the image with `docker run --publish 5000:5000 NAME:TAG`
 
 ## Run the project without docker
 
